@@ -8,10 +8,10 @@ module.exports = {
   password: process.env.DB_PASSWORD,
   database: process.env.DB_DATABASE,
   synchronize: false,
-  entities: ['dist/src/entities/*.{js,ts}'],
-  migrations: ['dist/src/migration/*.{js,ts}'],
-  seeds: ['dist/src/seeds/*.seed.{ts,js}'],
+  entities: ['dist/entities/*.{js,ts}'],
+  migrations: ['dist/migration/*.{js,ts}'],
+  seeds: ['dist/seeds/*.seed.{ts,js}'],
   cli: {
-    migrationsDir: 'src/migration',
+    migrationsDir: 'migration',
   },
 };
